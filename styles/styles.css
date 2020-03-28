@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 60px;
+  color: white;
+  padding: 0 0 0 15px;
+  background-color: #122139;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header a {
+  background-color: #eb9836;
+  border-radius: 4px;
+  color: #000014;
+  font-weight: bold;
+  padding: 5px 15px;
+  margin: 0 15px 0 0;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+  -webkit-box-shadow: 0px 0px 2px #000000;
+          box-shadow: 0px 0px 2px #000000;
+}
+
+#banner {
+  background-size: 100%;
+  height: 500px;
+}
+
+.parallax {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background: url(./../imgs/banner.jpg) no-repeat;
+}
+
+#page {
+  margin: 0 auto;
+}
+
+#page main {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#page main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  min-width: 300px;
+}
+
+#page main section h2 {
+  display: block;
+  font-weight: bold;
+  color: #b46a00;
+  border-bottom: 1px solid #122139;
+  padding: 0 0 0 20px;
+  margin: 0 0 15px 0;
+}
+
+#page main section.avisos {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#page main section.avisos details summary {
+  margin: 0 0 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#page main section.avisos details summary::-webkit-details-marker {
+  display: none;
+}
+
+#page main section.avisos details p {
+  margin: 0 0 15px 10px;
+  font-size: 18px;
+}
+
+#page main section.noticias {
+  min-width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#page main section.noticias div h3 {
+  margin: 0 0 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#page main section.noticias div p {
+  margin: 0 0 15px 10px;
+  font-size: 18px;
+}
+
+#page main section.carros {
+  min-width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#page main section.carros div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#page main section.carros div div:hover {
+  border-radius: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 2px 0 black;
+          box-shadow: 0 0 2px 0 black;
+}
+
+#page main img {
+  width: 175px;
+}
+
+.plus {
+  cursor: pointer;
+  background-color: #122139;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 20px 20px;
+}
+
+@media (min-width: 1200px) {
+  #page {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #page {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 600px) {
+  #page {
+    width: 600px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

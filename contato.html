@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAR-Select - Contato</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/database.js"></script>
 </head>
+
 <body>
-  
+  <header>
+    <h2>CAR-Select</h2>
+    <nav>
+      <a href="/index.html">HOME</a>
+      <a href="/contato.html">CONTATO</a>
+    </nav>
+  </header>
+
+  <div id='page'>
+    <main>
+      <section class="contato">
+        <h1>Contato</h1>
+
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+          </div>
+          <div>
+            <label for="fone">Telefone</label>
+            <input type="text" id="fone" name="fone">
+          </div>
+
+        </fieldset>
+        <fieldset>
+          <legend>Dados Profissionais</legend>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Mensagem</legend>
+          <textarea name="msg" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input class='btnEnviar' type="submit" value="Enviar">
+      </section>
+
+    </main>
+
+  </div>
 </body>
+
 </html>

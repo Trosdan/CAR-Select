@@ -106,18 +106,63 @@ header
             &.carros
                 min-width: 300px
                 flex-direction: column
-                div div
+                div 
                     display: flex
-                    justify-content: center
-                    align-items: center
-                    flex-direction: column
-                    transition: 0.5s
-
-                    &:hover
-                        border-radius: 8px
+                    flex: 1
+                    flex-wrap: wrap
+                    div
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
                         transition: 0.5s
-                        box-shadow: 0 0 2px 0 black
 
+                        &:hover
+                            border-radius: 8px
+                            transition: 0.5s
+                            box-shadow: 0 0 2px 0 black
+            &.contato
+                display: flex
+                flex-direction: column
+                h1 
+                    display: block
+                    font-weight: bold
+                    color: $secondaryDarkColor
+                    padding: 0 0 0 20px
+                    margin: 0 0 15px 0
+                
+                fieldset
+                    padding: 20px
+                    margin: 5px 0
+                    border-radius: 8px
+                    legend
+                        display: block
+                        font-weight: bold
+                        color: $secondaryDarkColor
+                        padding: 0 5px
+                    
+                    div
+                        display: flex
+                        flex: 1
+                        flex-direction: column
+                        label
+                            margin: 5px
+                        input
+                            margin: 5px
+                            background-color: $secondaryLightColor
+                            height: 40px
+                            padding: 0 10px
+                            border-radius: 8px
+                            border: 0
+
+                    
+                    textarea
+                        margin: 5px
+                        background-color: $secondaryLightColor
+                        height: 40px
+                        border-radius: 8px
+                        border: 0
+                        
         img
             width: 175px
             
